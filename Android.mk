@@ -1,3 +1,4 @@
+ifeq ($(TARGET_QCOM_MEDIA_VARIANT),caf-c8817d)
 ifneq (, $(filter aarch64 arm64, $(TARGET_ARCH)))
     $(info TODOAArch64: $(LOCAL_PATH)/Android.mk: Enable compile for 64 bit)
 else
@@ -23,3 +24,4 @@ include $(QCOM_MEDIA_ROOT)/QCMediaPlayer/Android.mk
 include $(QCOM_MEDIA_ROOT)/dashplayer/Android.mk
 
 endif # TARGET_ARCH
+endif # TARGET_QCOM_MEDIA_VARIANT
